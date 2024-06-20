@@ -1,0 +1,15 @@
+@mixin btn() {
+  background-color: lightgrey;
+  border: 2px solid grey;
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    border: 3px solid #666;
+
+  }
+  &:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+  }
+}

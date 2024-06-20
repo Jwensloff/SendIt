@@ -1,5 +1,6 @@
 @import "../../styling/fonts.scss";
 @import "../../styling/variables.scss";
+@import "../../styling/mixins.scss";
 
 .header {
   width: 100vw;
@@ -24,15 +25,9 @@
 }
 
 .menu {
+  @include btn;
   font-family: "Robototron", sans-serif;
-  background-color: lightgrey;
-  border: 1px solid grey;
-  padding: 0.25rem 0.5rem;
-  display: flex;
-  align-items: center;
-  & :hover {
-    cursor: pointer;
-  }
+ 
   span {
     margin-left: 0.5rem;
     font-size: 2rem;
@@ -40,12 +35,10 @@
 }
 
 .search-btn {
-  display: flex;
+  @include btn;
   font-family: "Robototron", sans-serif;
-  background-color: lightgrey;
-  border: 1px solid grey;
   padding: 0.25rem 0.5rem;
-  align-items: center;
+
   p {
     margin-left: 0.5rem;
     font-size: 2rem;

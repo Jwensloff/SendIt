@@ -14,10 +14,10 @@ const Header = () => {
           <span>Menu</span>
         </button>
         <h1>SendIt</h1>
-        <div className="search-btn">
-          <FontAwesomeIcon icon={faMagnifyingGlass} size="2x"/>
-          <p>search</p>
-        </div>
+        <button className="search-btn">
+          <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" />
+          <p>Search</p>
+        </button>
       </div>
     </header>
   );
