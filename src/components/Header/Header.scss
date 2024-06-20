@@ -2,6 +2,7 @@
 @import "../../styling/variables.scss";
 
 .header {
+  width: 100vw;
   background-color: $medium-grey;
   width: 100%;
   height: 12vh;
@@ -26,9 +27,7 @@
   font-family: "Robototron", sans-serif;
   background-color: lightgrey;
   border: 1px solid grey;
-  padding: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
   display: flex;
   align-items: center;
   & :hover {

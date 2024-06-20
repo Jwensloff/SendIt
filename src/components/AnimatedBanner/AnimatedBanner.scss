@@ -1,41 +1,33 @@
+@import "../../styling/fonts.scss";
+
 .scroller {
-  color: white;
-  background-color: darkblue;
-  height: 2vh;
+  font-family: "Robototron", sans-serif;
+  font-size: 1.25rem;
   overflow: hidden;
+  width: 100vw;
+  background-color: darkblue;
+  color: white;
+  height: 2vh;
 }
 
-.text-list {
-  list-style: none;
-}
-
-.scroller_inner {
+.text {
+  list-style-type: none;
+  white-space: nowrap;
   display: flex;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
-.animate-scroller {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+.animate-text {
+  animation: 110s slide infinite linear;
 }
 
-.animate-scroller {
-  .scroller_inner {
-    width: max-content;
-    flex-wrap: nowrap;
-    animation: scroll 120s linear infinite;
+@keyframes slide {
+  from {
+    transform: translateX(0);
   }
-}
-
-@keyframes scroll {
   to {
-    transform: translate(calc(-50%));
+    transform: translateX(-100%);
   }
 }

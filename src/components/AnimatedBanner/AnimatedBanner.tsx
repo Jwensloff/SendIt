@@ -26,15 +26,11 @@ const AnimatedBanner = () => {
   ];
 
   return (
-    <div className={animate ? "animate-scroller scroller" : "scroller"}>
-      <ul className="text-list scroller_inner">
+    <div className="scroller">
+      <ul className={animate ? "animate-text text" : "text"}>
+
         {listText.map((item, index) => (
           <li key={index}>{item}</li>
-        ))}
-        {listText.map((item, index) => (
-          <li key={`clone-${index}`} aria-hidden={true}>
-            {item}
-          </li>
         ))}
         {listText.map((item, index) => (
           <li key={`clone-${index}`} aria-hidden={true}>
