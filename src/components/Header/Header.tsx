@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import AnimatedBanner from "../AnimatedBanner/AnimatedBanner";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
@@ -10,11 +10,14 @@ const Header = () => {
       <AnimatedBanner />
       <div className="inner-header-content">
         <button className="menu">
-          <FontAwesomeIcon icon={faBars} size="3x" />
+          <FontAwesomeIcon icon={faBars} size="2x" />
           <span>Menu</span>
         </button>
         <h1>SendIt</h1>
-        <p>search</p>
+        <div className="search-btn">
+          <FontAwesomeIcon icon={faMagnifyingGlass} size="2x"/>
+          <p>search</p>
+        </div>
       </div>
     </header>
   );

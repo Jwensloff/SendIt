@@ -8,6 +8,10 @@
   background-color: darkblue;
   color: white;
   height: 2vh;
+
+  .animate-text:hover {
+    animation-play-state: paused;
+  }
 }
 
 .text {
