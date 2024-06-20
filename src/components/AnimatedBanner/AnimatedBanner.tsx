@@ -16,12 +16,12 @@ const AnimatedBanner = () => {
     "Shred the gnar.",
     "Live fast, die young.",
     "Safety third.",
+    "Risk it for the glory.",
     "Go big or go home.",
     "Ride the wave.",
     "Eat, sleep, shred, repeat.",
     "Live to ride, ride to live.",
     "No guts, no glory.",
-    "Risk it for the biscuit.",
     "Carpe freakin diem",
   ];
 
@@ -30,6 +30,11 @@ const AnimatedBanner = () => {
       <ul className="text-list scroller_inner">
         {listText.map((item, index) => (
           <li key={index}>{item}</li>
+        ))}
+        {listText.map((item, index) => (
+          <li key={`clone-${index}`} aria-hidden={true}>
+            {item}
+          </li>
         ))}
         {listText.map((item, index) => (
           <li key={`clone-${index}`} aria-hidden={true}>
