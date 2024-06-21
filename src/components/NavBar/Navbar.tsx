@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faChevronRight,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navbar() {
@@ -30,37 +34,41 @@ function Navbar() {
   return (
     <>
       <div className="navBar">
-        <Link
-          ref={menuRef}
-          to="#"
-          className="menu"
-          onClick={showSidebar}
-          aria-expanded={sidebar}
-        >
-          <FontAwesomeIcon icon={faBars} size="2x" />
-          <span>Menu</span>
-        </Link>
+        {!sidebar ? (
+          <Link
+            ref={menuRef}
+            to="#"
+            className="menu"
+            onClick={showSidebar}
+            aria-expanded={sidebar}
+          >
+            <FontAwesomeIcon icon={faBars} size="2x" />
+            <span>Menu</span>
+          </Link>
+        ) : (
+          <Link
+            to="#"
+            className="exit-btn"
+            onClick={showSidebar}
+            ref={closeButtonRef}
+          >
+            <FontAwesomeIcon icon={faXmark} size="2x" />
+            <span>Close</span>
+          </Link>
+        )}
       </div>
       <nav
         className={sidebar ? "nav-menu active" : "nav-menu"}
         aria-hidden={!sidebar}
       >
         <ul className="nav-menu-items">
-          <li className="navbar-toggle">
-            <Link
-              to="#"
-              className="exit-btn"
-              onClick={showSidebar}
-              ref={closeButtonRef}
-            >
-              <FontAwesomeIcon icon={faXmark} size="1x" />
-              <span>Close</span>
-            </Link>
-          </li>
           {sidebarData.map((item, index) => (
             <li key={index} className={item.className}>
               <Link to={item.path} tabIndex={sidebar ? 0 : -1}>
                 {item.title}
+                <span>
+                  <FontAwesomeIcon icon={faChevronRight} size="1x" />
+                </span>
               </Link>
             </li>
           ))}
