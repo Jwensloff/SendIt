@@ -10,10 +10,6 @@ const Header = () => {
     <header className="header">
       <AnimatedBanner />
       <div className="inner-header-content">
-        {/* <button className="menu">
-          <FontAwesomeIcon icon={faBars} size="2x" />
-          <span>Menu</span>
-        </button> */}
         <Navbar />
         <h1>SendIt</h1>
         <button className="search-btn">

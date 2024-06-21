@@ -66,7 +66,7 @@ function Navbar() {
       >
         <ul className="nav-menu-items">
           {sidebarData.map((item, index) => (
-            <li key={index} className={item.className}>
+            <li key={index} className={item.className} onClick={showSidebar}>
               <Link to={item.path} tabIndex={sidebar ? 0 : -1}>
                 {item.title}
                 <span>

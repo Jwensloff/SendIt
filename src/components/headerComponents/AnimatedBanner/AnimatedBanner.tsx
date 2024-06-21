@@ -22,7 +22,7 @@ const AnimatedBanner = () => {
     "Eat, sleep, shred, repeat.",
     "Live to ride, ride to live.",
     "No guts, no glory.",
-    "Carpe freakin diem",
+    "Carpe freakin diem.",
   ];
 
   return (
