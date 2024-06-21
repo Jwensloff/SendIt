@@ -52,54 +52,32 @@
   padding: 0;
 }
 
-// Navbar toggle button container
-.navbar-toggle {
-  // width: 90%;
-  // height: 80px;
-  // // display: flex;
-  // justify-content: start;
-  // align-items: center;
-  // padding: 0 16px;
-}
-
 // Styling for each nav item
 .nav-text {
-  // @include btn;
   font-family: "Robototron", sans-serif;
   border-top: 2px solid grey;
   background-color: lightgray;
-
   display: flex;
   justify-content: start;
   align-items: center;
-  // padding: 8px 16px;
   list-style: none;
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover{
+    background-color: pink;
+  }
 }
 
 // Styling for links within nav items
 .nav-text a {
-  // @include btn;
-  // background-color: lightgray;
-
   text-decoration: none;
   color: black;
   font-size: 2rem;
-  // height: 100%;
-  // width: 100%;
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-start;
-  // padding: 0 16px;
-}
-
-// Hover effect for links
-.nav-text a:hover {
-  background-color: pink;
+  width: 100%;
 }
 
 // Styling for the exit button
@@ -116,6 +94,7 @@
   justify-content: center;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
+
   span {
     margin-left: 0.5rem;
     font-size: 2rem;
