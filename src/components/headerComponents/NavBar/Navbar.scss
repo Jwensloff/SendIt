@@ -1,6 +1,6 @@
-@import "../../styling/fonts.scss";
-@import "../../styling/mixins.scss";
-@import "../../styling/variables.scss";
+@import "../../../styling/fonts.scss";
+@import "../../../styling/mixins.scss";
+@import "../../../styling/variables.scss";
 
 // Styling for the menu button
 .menu,
@@ -17,13 +17,6 @@
   }
 }
 
-// Navbar container
-.navbar {
-  // height: 80px;
-  // display: flex;
-  // justify-content: start;
-  // align-items: center;
-}
 
 // Styling for the nav menu
 .nav-menu {
