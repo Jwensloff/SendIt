@@ -1,0 +1,46 @@
+@import "../../styling/fonts.scss";
+@import "../../styling/variables.scss";
+@import "../../styling/mixins.scss";
+
+.header {
+  width: 100vw;
+  background-color: $medium-grey;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 4rem;
+    font-family: "Nasalization", sans-serif;
+  }
+}
+
+.inner-header-content {
+  width: 98%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  @include btn;
+  font-family: "Robototron", sans-serif;
+ 
+  span {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+  }
+}
+
+.search-btn {
+  @include btn;
+  font-family: "Robototron", sans-serif;
+  padding: 0.25rem 0.5rem;
+
+  p {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+  }
+}
