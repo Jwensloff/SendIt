@@ -29,9 +29,7 @@ const HomePage = () => {
   const cards = landingPageData.map((item, index) => {
     return (
       <Link to={item.link} key={index} className="home-page-card">
-        <div className="card-img">
-          <img className="icon" src={item.icon} alt={`${item.name} icon`} />
-        </div>
+        <img className="icon" src={item.icon} alt={`${item.name} icon`} />
         <p>{item.name}</p>
       </Link>
     );
@@ -42,7 +40,9 @@ const HomePage = () => {
       <div className="background-image">
         <p>Countdown to Winter:</p>
       </div>
-      <div className="home-page-card-container">{cards}</div>
+      <div className="home-content">
+        <div className="home-page-card-container">{cards}</div>
+      </div>
     </section>
   );
 };
