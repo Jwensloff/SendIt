@@ -8,6 +8,7 @@ import WeatherPage from "./pages/WeatherPage/WeatherPage";
 import ResortsPage from "./pages/ResortsPage/ResortsPage";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/weather" element={<WeatherPage />} />
           <Route path="/resorts" element={<ResortsPage />} />
