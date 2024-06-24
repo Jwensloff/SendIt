@@ -1,0 +1,64 @@
+@import "../../styling/fonts.scss";
+@import "../../styling/mixins.scss";
+@import "../../styling/variables.scss";
+
+.footer {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  min-height: 12vh;
+  background-color: $medium-grey;
+  font-family: "Robototron", sans-serif;
+  border-top: 2px solid grey;
+}
+
+.footer-links {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-nav-text {
+  font-family: "Robototron", sans-serif;
+  background-color: $medium-grey;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid grey;
+  width: 11rem;
+
+  &:hover {
+    background-color: lightgray;
+  }
+
+  &:active {
+    box-shadow: 3px 3px #666;
+  }
+
+  span {
+    margin-left: 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.disclaimer-text-wrapper {
+  padding-top: 1rem;
+}

@@ -9,6 +9,7 @@ import ResortsPage from "./pages/ResortsPage/ResortsPage";
 import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import HomePage from "./pages/HomePage/HomePage";
+import Footer from "./components/footerComponents/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/error" element={<ErrorPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
