@@ -32,7 +32,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid grey;
+  @include vintageBtn(2);
+
   width: 11rem;
 
   &:hover {

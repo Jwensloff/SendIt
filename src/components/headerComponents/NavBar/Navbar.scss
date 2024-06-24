@@ -51,7 +51,7 @@
 // Styling for each nav item
 .nav-text {
   font-family: "Robototron", sans-serif;
-  border-bottom: 2px solid grey;
+  @include vintageBtn(2);
   display: flex;
   justify-content: start;
   align-items: center;
@@ -67,8 +67,8 @@
   }
 
   &:active {
-    box-shadow: 0 3px #666;
-    border: 2px solid grey;
+    box-shadow: 2px 3px #666;
+    @include vintageBtn(5);
   }
 
   span {
