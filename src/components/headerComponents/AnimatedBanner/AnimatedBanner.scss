@@ -1,14 +1,15 @@
-@import "../../styling/fonts.scss";
+@import "../../../styling/fonts.scss";
 
 .scroller {
   font-family: "Robototron", sans-serif;
   font-size: 1.25rem;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   background-color: darkblue;
   color: white;
-  height: 2vh;
-
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  align-self: center;
   .animate-text:hover {
     animation-play-state: paused;
   }

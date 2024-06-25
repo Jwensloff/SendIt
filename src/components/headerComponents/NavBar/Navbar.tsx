@@ -28,7 +28,10 @@ function Navbar() {
   const sidebarData = [
     { title: "Home", path: "/", className: "nav-text" },
     { title: "About", path: "/about", className: "nav-text" },
-    { title: "Contact", path: "/contact", className: "nav-text" },
+    { title: "Weather", path: "/weather", className: "nav-text" },
+    { title: "Resorts", path: "/resorts", className: "nav-text" },
+    { title: "Products", path: "/products", className: "nav-text" },
+    { title: "Favorites", path: "/favorites", className: "nav-text" },
   ];
 
   return (
@@ -63,7 +66,7 @@ function Navbar() {
       >
         <ul className="nav-menu-items">
           {sidebarData.map((item, index) => (
-            <li key={index} className={item.className}>
+            <li key={index} className={item.className} onClick={showSidebar}>
               <Link to={item.path} tabIndex={sidebar ? 0 : -1}>
                 {item.title}
                 <span>

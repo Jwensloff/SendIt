@@ -1,15 +1,25 @@
 @mixin btn() {
-  background-color: lightgrey;
-  border: 2px solid grey;
+  background-color: $medium-grey;
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
   display: flex;
   align-items: center;
   &:hover {
     cursor: pointer;
-    border: 3px solid #666;
-
+    @include vintageBtn(2);
+    background-color: lightgrey;
   }
   &:active {
     box-shadow: 0 3px #666;
     transform: translateY(3px);
   }
+}
+
+@mixin vintageBtn($w) {
+  border-bottom: #{$w}px solid grey;
+  border-right: #{$w}px solid grey;
+  border-top: #{$w}px solid white;
+  border-left: #{$w}px solid white;
 }
