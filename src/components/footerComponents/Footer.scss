@@ -4,7 +4,6 @@
 
 .footer {
   padding: 1rem;
-  width: 100vw;
   min-height: 12vh;
   background-color: $medium-grey;
   font-family: "Robototron", sans-serif;
@@ -40,6 +39,7 @@
 
   &:active {
     box-shadow: 3px 3px #666;
+    transform: translateY(3px);
   }
 
   span {
