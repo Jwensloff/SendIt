@@ -1,8 +1,6 @@
 import React from "react";
 import "./Header.scss";
 import AnimatedBanner from "../AnimatedBanner/AnimatedBanner";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../NavBar/Navbar";
 
 const Header = () => {
@@ -12,10 +10,6 @@ const Header = () => {
       <div className="inner-header-content">
         <Navbar />
         <h1>SendIt</h1>
-        <button className="search-btn">
-          <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" />
-          <p>Search</p>
-        </button>
       </div>
     </header>
   );

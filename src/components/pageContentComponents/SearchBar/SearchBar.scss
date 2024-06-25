@@ -1,0 +1,30 @@
+@import "../../../styling/fonts.scss";
+@import "../../../styling/variables.scss";
+@import "../../../styling/mixins.scss";
+
+.search-btn {
+  @include btn;
+  font-family: "Robototron", sans-serif;
+  padding: 0.25rem 0.5rem;
+  font-size: 2rem;
+}
+
+.search-form {
+  background-color: darkblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+
+  form {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+
+  }
+  input {
+    font-family: "Robototron", sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+}

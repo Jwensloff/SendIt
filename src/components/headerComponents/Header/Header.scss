@@ -22,26 +22,21 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .menu {
   @include btn;
   font-family: "Robototron", sans-serif;
- 
+
   span {
     margin-left: 0.5rem;
     font-size: 2rem;
   }
 }
 
-.search-btn {
-  @include btn;
-  font-family: "Robototron", sans-serif;
-  padding: 0.25rem 0.5rem;
-
-  p {
-    margin-left: 0.5rem;
-    font-size: 2rem;
-  }
-}
