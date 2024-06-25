@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { searchResort } from "../../apiCalls/apiCalls";
 
-function ResortsPage() {
-  return (
-    <div>
-      this is the resorts page
-    </div>
-  )
-}
+const ResortsPage = () => {
+  useEffect(() => {
+    let result = searchResort("sugarbush");
+    console.log(result);
+  }, []);
+  return <div>this is the resorts page</div>;
+};
 
-export default ResortsPage
+export default ResortsPage;
