@@ -5,3 +5,20 @@
   font-family: "Robototron", sans-serif;
   background-color: $medium-grey;
 }
+
+.initial-content {
+  height: 66.5vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 2rem;
+    padding: 1rem;
+
+  }
+  img {
+    height: 10rem;
+  }
+}

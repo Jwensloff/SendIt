@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ResortsPage.scss";
 import { ResortData } from "../../types";
 import SearchBar from "../../components/pageContentComponents/SearchBar/SearchBar";
+import ResortResults from "../../components/pageContentComponents/ResortResults/ResortResults";
 
 const ResortsPage = () => {
   const [data, setData] = useState<ResortData | null>(null);
@@ -19,6 +20,17 @@ const ResortsPage = () => {
         setSearchInput={setSearchInput}
         setData={setData}
       />
+      {data ? (
+        <ResortResults />
+      ) : (
+        <div className="initial-content">
+          <p>Search resorts to get started</p>
+          <img
+            src="assets/photos/ski-lift.png"
+            alt="Icon of a person sitting on a ski lift"
+          />
+        </div>
+      )}
     </section>
   );
 };
