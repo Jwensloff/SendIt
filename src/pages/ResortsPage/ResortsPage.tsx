@@ -21,10 +21,10 @@ const ResortsPage = () => {
         setData={setData}
       />
       {data ? (
-        <ResortResults />
+        <ResortResults data={data} />
       ) : (
         <div className="initial-content">
-          <p>Search resorts to get started</p>
+          <p>Search a resort to get started</p>
           <img
             src="assets/photos/ski-lift.png"
             alt="Icon of a person sitting on a ski lift"
