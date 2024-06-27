@@ -48,8 +48,10 @@ const ResortResults = ({ data }: ResortResultsProps) => {
       <div className="resort-results-content">
         <div>
           <h3>Current weather conditions</h3>
-          <p>As of {data?.weather.date}</p>
-          <p>{data?.weather.text}</p>
+          <p>
+            As of {data?.weather.date}, the weather is reported as:{" "}
+            {data?.weather.text}
+          </p>
         </div>
         <div className="pie-chart-wrapper">
           <h3>Percentage of operating lifts</h3>
