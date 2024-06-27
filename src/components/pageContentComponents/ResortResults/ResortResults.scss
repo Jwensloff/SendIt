@@ -10,17 +10,31 @@
   }
 }
 
+.resort-results-content {
+  display: flex;
+}
 .lift-list-container {
   border: 2px solid grey;
-  width: 30%;
+  // width: 30%;
+  text-align: left;
   padding: 1rem;
+
   ul {
     list-style: none;
     font-size: 1.25rem;
   }
 
-  p {
+  h3 {
+    text-align: center;
     text-decoration: underline;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
+}
+
+.pie-chart-wrapper {
+  border: 2px solid grey;
+  padding: 1rem;
+
+  width: 25%;
 }

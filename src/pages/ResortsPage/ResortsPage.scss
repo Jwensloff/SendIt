@@ -4,10 +4,11 @@
 .resort-page {
   font-family: "Robototron", sans-serif;
   background-color: $medium-grey;
+  min-height: 76vh;
 }
 
 .initial-content {
-  height: 70vh;
+  height: 68vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,6 @@
   p {
     font-size: 2rem;
     padding: 1rem;
-
   }
   img {
     height: 10rem;
