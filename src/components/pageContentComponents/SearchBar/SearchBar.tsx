@@ -1,8 +1,7 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent } from "react";
 import "./SearchBar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { searchResort } from "../../../apiCalls/apiCalls";
 import { ResortData } from "../../../types";
 import mockData from "../../../pages/ResortsPage/mockData.json";
 
