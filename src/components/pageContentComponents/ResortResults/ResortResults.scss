@@ -1,0 +1,40 @@
+@import "../../../styling/fonts.scss";
+@import "../../../styling/variables.scss";
+@import "../../../styling/mixins.scss";
+
+.resort-results-page {
+  padding: 1rem;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.resort-results-content {
+  display: flex;
+}
+.lift-list-container {
+  border: 2px solid grey;
+  // width: 30%;
+  text-align: left;
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.pie-chart-wrapper {
+  border: 2px solid grey;
+  padding: 1rem;
+
+  width: 25%;
+}

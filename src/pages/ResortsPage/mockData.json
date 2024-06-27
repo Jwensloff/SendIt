@@ -1,0 +1,81 @@
+{
+  "id": "sugarbush",
+  "name": "Sugarbush",
+  "href": "https://www.sugarbush.com/mountain/conditions",
+  "ll": [
+      -72.879318,
+      44.145721
+  ],
+  "timestamp": {
+      "lifts": 1719341310623,
+      "opening": 1719341309786,
+      "weather": 1719341310806,
+      "webcams": 1719341324847,
+      "deals": 1719305548958
+  },
+  "lifts": {
+      "status": {
+          "Castlerock Double": "closed",
+          "Gate House Express Quad": "closed",
+          "Green Mountain Express Quad": "closed",
+          "Heaven's Gate Triple": "closed",
+          "Inverness Quad": "closed",
+          "North Lynx Triple": "closed",
+          "North Ridge Express Quad": "closed",
+          "Schoolhouse Lift": "closed",
+          "Slide Brook Express Quad": "closed",
+          "Summit Quad": "closed",
+          "Sunshine Quad": "closed",
+          "Super Bravo Express Quad": "closed",
+          "Tommy's Toy": "closed",
+          "Valley House Quad": "closed",
+          "Village Quad": "closed",
+          "Welcome Mat": "closed"
+      },
+      "stats": {
+          "open": 0,
+          "hold": 0,
+          "scheduled": 0,
+          "closed": 16,
+          "percentage": {
+              "open": 0,
+              "hold": 0,
+              "scheduled": 0,
+              "closed": 100
+          }
+      }
+  },
+  "weather": {
+      "date": "2024-06-25",
+      "icon": [
+          "basenone",
+          "icon-sun"
+      ],
+      "text": "Sunny, with a high near 78. West wind around 8 mph.",
+      "conditions": "Sunny",
+      "temperature": {
+          "max": 78
+      },
+      "notice": {
+          "href": "https://forecast.weather.gov/MapClick.php?lat=44.145721&lon=-72.879318",
+          "img": "https://static.liftie.info/img/noaa-logo.svg",
+          "width": 72,
+          "site": "noaa.gov"
+      }
+  },
+  "webcams": [
+      {
+          "name": "Warren: Sugarbush Resort",
+          "source": "https://windy.com/webcams/1708311004",
+          "image": "https://images-webcams.windy.com/public/04/1708311004/current/preview/1708311004.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJjYW1faWQiOjE3MDgzMTEwMDQsInVzZXJfdHlwZSI6MCwiYXZhaWxhYmxlX3NpemVzIjoidGVhc2VyYmcsaWNvbix0aHVtYm5haWwscHJldmlldyIsImlhdCI6MTcxOTM0MTMyNCwiZXhwIjoxNzE5MzQxOTI0fQ.gBcpo1ENOzpBx0l7A2Jrzc9GhT5MOG0mHY-M_POfwRM",
+          "notice": "Webcams provided by\n<a href=\"https://www.windy.com/\" target=\"_blank\" rel=\"noopener\">windy.com</a> &mdash;\n<a href=\"https://www.windy.com/webcams/add\" target=\"_blank\" rel=\"noopener\">add a webcam</a>\n"
+      },
+      {
+          "name": "Warren › West: Mount Ellen",
+          "source": "https://windy.com/webcams/1561248847",
+          "image": "https://images-webcams.windy.com/public/47/1561248847/current/preview/1561248847.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3ZWJjYW1faWQiOjE1NjEyNDg4NDcsInVzZXJfdHlwZSI6MCwiYXZhaWxhYmxlX3NpemVzIjoidGVhc2VyYmcsaWNvbix0aHVtYm5haWwscHJldmlldyIsImlhdCI6MTcxOTM0MTMyNCwiZXhwIjoxNzE5MzQxOTI0fQ.5OrdXqfy8r1sxXMHxg0J-Q42zcCpbePt0YoY79wsMxA",
+          "notice": "Webcams provided by\n<a href=\"https://www.windy.com/\" target=\"_blank\" rel=\"noopener\">windy.com</a> &mdash;\n<a href=\"https://www.windy.com/webcams/add\" target=\"_blank\" rel=\"noopener\">add a webcam</a>\n"
+      }
+  ],
+  "open": false
+}
