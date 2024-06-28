@@ -62,4 +62,4 @@ jobs:
           app-name: 'sendit'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_64FC81B6A3E340618193070B656227B5 }}
-          package: .
+          package: release.zip
